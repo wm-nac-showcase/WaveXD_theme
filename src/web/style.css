@@ -15,7 +15,7 @@ ex: color-mix(in srgb, color1 50%, color2 30%)
 :root {
   /**--Colours--**/
   /*--Primary colours--*/
-  --wm-color-primary: #2563eb;
+  --wm-color-primary: #b072ea;
   --wm-color-primary-10: color-mix(in srgb, var(--wm-color-primary), var(--wm-color-contrast-light) 90%);
   --wm-color-primary-20: color-mix(in srgb, var(--wm-color-primary), var(--wm-color-contrast-light) 75%);
   --wm-color-primary-30: color-mix(in srgb, var(--wm-color-primary), var(--wm-color-contrast-light) 50%);
@@ -126,6 +126,8 @@ ex: color-mix(in srgb, color1 50%, color2 30%)
   --wm-link-color: #1b52f3;
   --wm-text-muted-color: #6f727b;
   --wm-separator-color: rgba(207, 219, 213, 0.6);
+  --wm-aside-panel-active-color: #2b2b2b;
+  --wm-aside-panel-active-bg-color: #f7f7f7;
   /**--Font--**/
   --wm-font-family: "DM Sans", sans-serif, var(--wm-font-family-backup);
   --wm-font-family-backup: "Arial", sans-serif;
@@ -205,11 +207,11 @@ ex: color-mix(in srgb, color1 50%, color2 30%)
   --wm-aside-panel-text-color: var(--wm-text-color);
   --wm-aside-panel-link-spacing: var(--wm-space-2) var(--wm-space-3);
   --wm-aside-panel-link-color: var(--wm-text-color);
-  --wm-aside-panel-link-hover-color: var(--wm-color-primary-60);
-  --wm-aside-panel-link-active-color: var(--wm-color-primary);
+  --wm-aside-panel-link-hover-color: var(--wm-aside-panel-active-color);
+  --wm-aside-panel-link-active-color: var(--wm-aside-panel-active-color);
   --wm-aside-panel-link-bg-color: var(--wm-color-contrast-light);
-  --wm-aside-panel-link-hover-bg-color: var(--wm-color-contrast-light);
-  --wm-aside-panel-link-active-bg-color: var(--wm-color-primary-10);
+  --wm-aside-panel-link-hover-bg-color: var(--wm-aside-panel-active-bg-color);
+  --wm-aside-panel-link-active-bg-color: var(--wm-aside-panel-active-bg-color);
   --wm-aside-panel-link-font-size: var(--wm-font-size-base);
   --wm-aside-panel-link-icon-size: var(--wm-icon-size-2);
   --wm-aside-panel-link-icon-color: var(--wm-text-color);
@@ -221,10 +223,10 @@ ex: color-mix(in srgb, color1 50%, color2 30%)
   --wm-page-text-color: var(--wm-color-contrast-dark);
   --wm-page-text-muted-color: var(--wm-color-dark-grey-500);
   /*--app footer--*/
-  --wm-footer-spacing: 5rem 0rem 2.5rem 0rem;
-  --wm-footer-bg: #09090b;
+  --wm-footer-spacing: 2rem 2rem 2rem 0rem;
+  --wm-footer-bg: #ffffff;
   --wm-footer-text-color: #ffffff;
-  --wm-footer-text-muted-color: #ffffff;
+  --wm-footer-text-muted-color: #2b2b2b;
   --wm-footer-height: auto;
   --wm-footer-separator-color: transparent;
   /**--Components--**/
@@ -250,8 +252,8 @@ ex: color-mix(in srgb, color1 50%, color2 30%)
   --wm-btn-contrast-white: #ffffff;
   --wm-btn-contrast-black: rgba(0, 0, 0, 0.87);
   --wm-btn-raised-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.16);
-  --wm-btn-raised-hover-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-  --wm-btn-raised-active-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+  --wm-btn-raised-hover-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, .14), 0px 1px 10px 0px rgba(0, 0, 0, .12);
+  --wm-btn-raised-active-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, .14), 0px 3px 14px 2px rgba(0, 0, 0, .12);
   /*--app grid (or) Data Table --*/
   --wm-app-grid-bg: var(--wm-color-contrast-light);
   --wm-app-grid-radius: 8px;
@@ -352,6 +354,33 @@ ex: color-mix(in srgb, color1 50%, color2 30%)
   text-transform: var(--wm-body-text-transform);
   -webkit-font-smoothing: antialiased;
   /** Reuasble style selectors with arguments */
+  /* All Sides Padding */
+  /* Padding Left */
+  /* Padding Right */
+  /* Padding Top */
+  /* Padding Bottom */
+  /* Padding X-axis (Left & Right) */
+  /* Padding Y-axis (Top & Bottom) */
+  /* All Sides Margin */
+  /* Margin Left */
+  /* Margin Right */
+  /* Margin Top */
+  /* Margin Bottom */
+  /* Margin X-axis (Left & Right) */
+  /* Margin Y-axis (Top & Bottom) */
+  /* Auto Margins (Centering) */
+  /* Display */
+  /* Flex Direction */
+  /* Flex Wrap */
+  /* Justify Content */
+  /* Align Items */
+  /* Align Self */
+  /* Align Content */
+  /* Flex Grow */
+  /* Flex Shrink */
+  /* Flex Basis */
+  /* Order */
+  /* Gap (Spacing between flex items) */
   /**--component styles--**/
   /**--Basic--**/
   /**--Data Entry--**/
@@ -1726,7 +1755,7 @@ ex: color-mix(in srgb, color1 50%, color2 30%)
 .wm-app mark,
 .wm-app .mark {
   background-color: #ffffff;
-  padding: .2em;
+  padding: 0.2em;
 }
 .wm-app .text-left {
   text-align: left;
@@ -2029,13 +2058,71 @@ a.wm-app .bg-danger:focus {
   margin-left: 0;
   margin-right: 0;
 }
-.wm-app .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.wm-app .col-xs-1,
+.wm-app .col-sm-1,
+.wm-app .col-md-1,
+.wm-app .col-lg-1,
+.wm-app .col-xs-2,
+.wm-app .col-sm-2,
+.wm-app .col-md-2,
+.wm-app .col-lg-2,
+.wm-app .col-xs-3,
+.wm-app .col-sm-3,
+.wm-app .col-md-3,
+.wm-app .col-lg-3,
+.wm-app .col-xs-4,
+.wm-app .col-sm-4,
+.wm-app .col-md-4,
+.wm-app .col-lg-4,
+.wm-app .col-xs-5,
+.wm-app .col-sm-5,
+.wm-app .col-md-5,
+.wm-app .col-lg-5,
+.wm-app .col-xs-6,
+.wm-app .col-sm-6,
+.wm-app .col-md-6,
+.wm-app .col-lg-6,
+.wm-app .col-xs-7,
+.wm-app .col-sm-7,
+.wm-app .col-md-7,
+.wm-app .col-lg-7,
+.wm-app .col-xs-8,
+.wm-app .col-sm-8,
+.wm-app .col-md-8,
+.wm-app .col-lg-8,
+.wm-app .col-xs-9,
+.wm-app .col-sm-9,
+.wm-app .col-md-9,
+.wm-app .col-lg-9,
+.wm-app .col-xs-10,
+.wm-app .col-sm-10,
+.wm-app .col-md-10,
+.wm-app .col-lg-10,
+.wm-app .col-xs-11,
+.wm-app .col-sm-11,
+.wm-app .col-md-11,
+.wm-app .col-lg-11,
+.wm-app .col-xs-12,
+.wm-app .col-sm-12,
+.wm-app .col-md-12,
+.wm-app .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 0;
   padding-right: 0;
 }
-.wm-app .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+.wm-app .col-xs-1,
+.wm-app .col-xs-2,
+.wm-app .col-xs-3,
+.wm-app .col-xs-4,
+.wm-app .col-xs-5,
+.wm-app .col-xs-6,
+.wm-app .col-xs-7,
+.wm-app .col-xs-8,
+.wm-app .col-xs-9,
+.wm-app .col-xs-10,
+.wm-app .col-xs-11,
+.wm-app .col-xs-12 {
   float: left;
 }
 .wm-app .col-xs-12 {
@@ -2192,7 +2279,18 @@ a.wm-app .bg-danger:focus {
   margin-left: 0%;
 }
 @media (min-width: 768px) {
-  .wm-app .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .wm-app .col-sm-1,
+  .wm-app .col-sm-2,
+  .wm-app .col-sm-3,
+  .wm-app .col-sm-4,
+  .wm-app .col-sm-5,
+  .wm-app .col-sm-6,
+  .wm-app .col-sm-7,
+  .wm-app .col-sm-8,
+  .wm-app .col-sm-9,
+  .wm-app .col-sm-10,
+  .wm-app .col-sm-11,
+  .wm-app .col-sm-12 {
     float: left;
   }
   .wm-app .col-sm-12 {
@@ -2350,7 +2448,18 @@ a.wm-app .bg-danger:focus {
   }
 }
 @media (min-width: 992px) {
-  .wm-app .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .wm-app .col-md-1,
+  .wm-app .col-md-2,
+  .wm-app .col-md-3,
+  .wm-app .col-md-4,
+  .wm-app .col-md-5,
+  .wm-app .col-md-6,
+  .wm-app .col-md-7,
+  .wm-app .col-md-8,
+  .wm-app .col-md-9,
+  .wm-app .col-md-10,
+  .wm-app .col-md-11,
+  .wm-app .col-md-12 {
     float: left;
   }
   .wm-app .col-md-12 {
@@ -2508,7 +2617,18 @@ a.wm-app .bg-danger:focus {
   }
 }
 @media (min-width: 1200px) {
-  .wm-app .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  .wm-app .col-lg-1,
+  .wm-app .col-lg-2,
+  .wm-app .col-lg-3,
+  .wm-app .col-lg-4,
+  .wm-app .col-lg-5,
+  .wm-app .col-lg-6,
+  .wm-app .col-lg-7,
+  .wm-app .col-lg-8,
+  .wm-app .col-lg-9,
+  .wm-app .col-lg-10,
+  .wm-app .col-lg-11,
+  .wm-app .col-lg-12 {
     float: left;
   }
   .wm-app .col-lg-12 {
@@ -3593,26 +3713,26 @@ fieldset[disabled] .wm-app .btn-default.focus {
 }
 .wm-app .btn-primary {
   color: #fff;
-  background-color: #9a5aff;
-  border-color: #8a41ff;
+  background-color: #B072EA;
+  border-color: #a45ce7;
 }
 .wm-app .btn-primary:focus,
 .wm-app .btn-primary.focus {
   color: #fff;
-  background-color: #7b27ff;
-  border-color: #4a00c0;
+  background-color: #9746e3;
+  border-color: #6419aa;
 }
 .wm-app .btn-primary:hover {
   color: #fff;
-  background-color: #7b27ff;
-  border-color: #6503ff;
+  background-color: #9746e3;
+  border-color: #8627df;
 }
 .wm-app .btn-primary:active,
 .wm-app .btn-primary.active,
 .open > .dropdown-toggle.wm-app .btn-primary {
   color: #fff;
-  background-color: #7b27ff;
-  border-color: #6503ff;
+  background-color: #9746e3;
+  border-color: #8627df;
 }
 .wm-app .btn-primary:active:hover,
 .wm-app .btn-primary.active:hover,
@@ -3624,8 +3744,8 @@ fieldset[disabled] .wm-app .btn-default.focus {
 .wm-app .btn-primary.active.focus,
 .open > .dropdown-toggle.wm-app .btn-primary.focus {
   color: #fff;
-  background-color: #6503ff;
-  border-color: #4a00c0;
+  background-color: #8627df;
+  border-color: #6419aa;
 }
 .wm-app .btn-primary:active,
 .wm-app .btn-primary.active,
@@ -3641,11 +3761,11 @@ fieldset[disabled] .wm-app .btn-primary:focus,
 .wm-app .btn-primary.disabled.focus,
 .wm-app .btn-primary[disabled].focus,
 fieldset[disabled] .wm-app .btn-primary.focus {
-  background-color: #9a5aff;
-  border-color: #8a41ff;
+  background-color: #B072EA;
+  border-color: #a45ce7;
 }
 .wm-app .btn-primary .badge {
-  color: #9a5aff;
+  color: #B072EA;
   background-color: #fff;
 }
 .wm-app .btn-success {
@@ -5258,7 +5378,6 @@ fieldset[disabled] .wm-app .navbar-inverse .btn-link:focus {
   background-color: #109fda;
   border-color: #fff;
   cursor: default;
-
 }
 .wm-app .pagination > .disabled > span,
 .wm-app .pagination > .disabled > span:hover,
@@ -5343,7 +5462,7 @@ fieldset[disabled] .wm-app .navbar-inverse .btn-link:focus {
 }
 .wm-app .label {
   display: inline;
-  padding: .2em .6em .3em;
+  padding: 0.2em 0.6em 0.3em;
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
@@ -5351,7 +5470,7 @@ fieldset[disabled] .wm-app .navbar-inverse .btn-link:focus {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
 a.wm-app .label:hover,
 a.wm-app .label:focus {
@@ -6842,12 +6961,12 @@ button.wm-app .close {
   position: absolute;
   top: 0;
   left: 0;
-  width: 4%;
-  bottom: 60px;
-  color: #ffffff;
+  bottom: 0;
+  width: 15%;
   opacity: 0.5;
   filter: alpha(opacity=50);
   font-size: 20px;
+  color: #808080;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   background-color: rgba(0, 0, 0, 0);
@@ -6936,7 +7055,7 @@ button.wm-app .close {
   margin: 0;
   width: 12px;
   height: 12px;
-  background-color: #B072EA;
+  background-color: #fff;
 }
 .wm-app .carousel-caption {
   position: absolute;
@@ -7357,13 +7476,14 @@ button.wm-app .close {
   padding: var(--wm-header-padding);
   margin-top: var(--wm-space-2);
   border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
+  border-bottom: 1px solid #E6ECE9;
   /****nav item styles ***/
 }
 .wm-app .app-header .app-header-container,
 .wm-app .app-mobile-header .app-header-container {
   height: 100%;
   position: relative;
-  padding: 0 1rem;
+  padding: 0  1rem;
 }
 .wm-app .app-header .app-logo,
 .wm-app .app-mobile-header .app-logo {
@@ -7403,7 +7523,7 @@ button.wm-app .close {
 .wm-app .app-header .nav > li .profile a,
 .wm-app .app-mobile-header .nav > li .profile a {
   padding: 0 2em 0 1.5em;
-  margin: .9em 0;
+  margin: 0.9em 0;
   border-radius: 0;
 }
 .wm-app .app-header .nav > li .profile a img,
@@ -7419,7 +7539,7 @@ button.wm-app .close {
   background-color: var(--wm-separator-color);
   position: absolute;
   left: 0;
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 .wm-app .app-header .app-nav.nav-pills li.app-nav-item a,
 .wm-app .app-mobile-header .app-nav.nav-pills li.app-nav-item a {
@@ -7503,7 +7623,7 @@ button.wm-app .close {
 .wm-app .app-mobile-header .app-search .form-control {
   --input-bg: rgba(242, 244, 247, 0.1);
   border-color: rgba(242, 244, 247, 0.01);
-  color: #747A80;
+  color: #747a80;
   border-radius: 500px !important;
 }
 .wm-app .app-header .app-search .form-control::-moz-placeholder,
@@ -7532,6 +7652,14 @@ button.wm-app .close {
 .wm-app .app-mobile-header .app-search .form-control::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
+.wm-app .app-header .app-search span.input-group-addon,
+.wm-app .app-mobile-header .app-search span.input-group-addon {
+  left: 20px;
+}
+.wm-app .app-header .app-search input.app-textbox.form-control.app-search-input,
+.wm-app .app-mobile-header .app-search input.app-textbox.form-control.app-search-input {
+  left: 22px;
+}
 .wm-app .app-header .input-group-addon,
 .wm-app .app-mobile-header .input-group-addon {
   color: var(--wm-heading-text-color);
@@ -7548,6 +7676,753 @@ button.wm-app .close {
 .wm-app .app-header + .app-content,
 .wm-app .app-mobile-header + .app-content {
   height: 100%;
+}
+.wm-app .text-start {
+  text-align: left;
+}
+.wm-app .overflow-hidden {
+  overflow: hidden;
+}
+.wm-app .card-block {
+  cursor: pointer;
+  min-height: 350px;
+}
+.wm-app .wm-app img.img-size.app-picture {
+  height: 24px;
+  width: 24px !important;
+}
+.wm-app .card-block a {
+  height: 12vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.wm-app .card-block:hover,
+.wm-app .card-block:active {
+  background-color: #efe3fb;
+}
+.wm-app .card-block:hover a,
+.wm-app .card-block:hover a:hover,
+.wm-app .card-block:active a,
+.wm-app .card-block:active a:active {
+  color: #b072ea;
+  font-weight: 500;
+  text-decoration: none;
+}
+.wm-app .h-180 {
+  height: 180px;
+}
+.wm-app .w-70 {
+  width: 70%;
+}
+.wm-app .h-100 {
+  height: 100%;
+}
+.wm-app .h-85 {
+  height: 85%;
+}
+.wm-app .p-0 {
+  padding: 0px;
+}
+.wm-app .p-1 {
+  padding: 4px;
+}
+.wm-app .p-2 {
+  padding: 8px;
+}
+.wm-app .p-3 {
+  padding: 12px;
+}
+.wm-app .p-4 {
+  padding: 16px;
+}
+.wm-app .p-5 {
+  padding: 20px;
+}
+.wm-app .p-6 {
+  padding: 24px;
+}
+.wm-app .p-7 {
+  padding: 28px;
+}
+.wm-app .p-8 {
+  padding: 32px;
+}
+.wm-app .p-9 {
+  padding: 36px;
+}
+.wm-app .p-10 {
+  padding: 40px;
+}
+.wm-app .pl-0 {
+  padding-left: 0px;
+}
+.wm-app .pl-1 {
+  padding-left: 4px;
+}
+.wm-app .pl-2 {
+  padding-left: 8px;
+}
+.wm-app .pl-3 {
+  padding-left: 12px;
+}
+.wm-app .pl-4 {
+  padding-left: 16px;
+}
+.wm-app .pl-5 {
+  padding-left: 20px;
+}
+.wm-app .pl-6 {
+  padding-left: 24px;
+}
+.wm-app .pl-7 {
+  padding-left: 28px;
+}
+.wm-app .pl-8 {
+  padding-left: 32px;
+}
+.wm-app .pl-9 {
+  padding-left: 36px;
+}
+.wm-app .pl-10 {
+  padding-left: 40px;
+}
+.wm-app .pr-0 {
+  padding-right: 0px;
+}
+.wm-app .pr-1 {
+  padding-right: 4px;
+}
+.wm-app .pr-2 {
+  padding-right: 8px;
+}
+.wm-app .pr-3 {
+  padding-right: 12px;
+}
+.wm-app .pr-4 {
+  padding-right: 16px;
+}
+.wm-app .pr-5 {
+  padding-right: 20px;
+}
+.wm-app .pr-6 {
+  padding-right: 24px;
+}
+.wm-app .pr-7 {
+  padding-right: 28px;
+}
+.wm-app .pr-8 {
+  padding-right: 32px;
+}
+.wm-app .pr-9 {
+  padding-right: 36px;
+}
+.wm-app .pr-10 {
+  padding-right: 40px;
+}
+.wm-app .pt-0 {
+  padding-top: 0px;
+}
+.wm-app .pt-1 {
+  padding-top: 4px;
+}
+.wm-app .pt-2 {
+  padding-top: 8px;
+}
+.wm-app .pt-3 {
+  padding-top: 12px;
+}
+.wm-app .pt-4 {
+  padding-top: 16px;
+}
+.wm-app .pt-5 {
+  padding-top: 20px;
+}
+.wm-app .pt-6 {
+  padding-top: 24px;
+}
+.wm-app .pt-7 {
+  padding-top: 28px;
+}
+.wm-app .pt-8 {
+  padding-top: 32px;
+}
+.wm-app .pt-9 {
+  padding-top: 36px;
+}
+.wm-app .pt-10 {
+  padding-top: 40px;
+}
+.wm-app .pb-0 {
+  padding-bottom: 0px;
+}
+.wm-app .pb-1 {
+  padding-bottom: 4px;
+}
+.wm-app .pb-2 {
+  padding-bottom: 8px;
+}
+.wm-app .pb-3 {
+  padding-bottom: 12px;
+}
+.wm-app .pb-4 {
+  padding-bottom: 16px;
+}
+.wm-app .pb-5 {
+  padding-bottom: 20px;
+}
+.wm-app .pb-6 {
+  padding-bottom: 24px;
+}
+.wm-app .pb-7 {
+  padding-bottom: 28px;
+}
+.wm-app .pb-8 {
+  padding-bottom: 32px;
+}
+.wm-app .pb-9 {
+  padding-bottom: 36px;
+}
+.wm-app .pb-10 {
+  padding-bottom: 40px;
+}
+.wm-app .px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.wm-app .px-1 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.wm-app .px-2 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.wm-app .px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.wm-app .px-4 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.wm-app .px-5 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.wm-app .px-6 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.wm-app .px-7 {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.wm-app .px-8 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.wm-app .px-9 {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+.wm-app .px-10 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.wm-app .py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.wm-app .py-1 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.wm-app .py-2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.wm-app .py-3 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.wm-app .py-4 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.wm-app .py-5 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.wm-app .py-6 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.wm-app .py-7 {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.wm-app .py-8 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.wm-app .py-9 {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.wm-app .py-10 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.wm-app .m-0 {
+  margin: 0px;
+}
+.wm-app .m-1 {
+  margin: 4px;
+}
+.wm-app .m-2 {
+  margin: 8px;
+}
+.wm-app .m-3 {
+  margin: 12px;
+}
+.wm-app .m-4 {
+  margin: 16px;
+}
+.wm-app .m-5 {
+  margin: 20px;
+}
+.wm-app .m-6 {
+  margin: 24px;
+}
+.wm-app .m-7 {
+  margin: 28px;
+}
+.wm-app .m-8 {
+  margin: 32px;
+}
+.wm-app .m-9 {
+  margin: 36px;
+}
+.wm-app .m-10 {
+  margin: 40px;
+}
+.wm-app .ml-0 {
+  margin-left: 0px;
+}
+.wm-app .ml-1 {
+  margin-left: 4px;
+}
+.wm-app .ml-2 {
+  margin-left: 8px;
+}
+.wm-app .ml-3 {
+  margin-left: 12px;
+}
+.wm-app .ml-4 {
+  margin-left: 16px;
+}
+.wm-app .ml-5 {
+  margin-left: 20px;
+}
+.wm-app .ml-6 {
+  margin-left: 24px;
+}
+.wm-app .ml-7 {
+  margin-left: 28px;
+}
+.wm-app .ml-8 {
+  margin-left: 32px;
+}
+.wm-app .ml-9 {
+  margin-left: 36px;
+}
+.wm-app .ml-10 {
+  margin-left: 40px;
+}
+.wm-app .mr-0 {
+  margin-right: 0px;
+}
+.wm-app .mr-1 {
+  margin-right: 4px;
+}
+.wm-app .mr-2 {
+  margin-right: 8px;
+}
+.wm-app .mr-3 {
+  margin-right: 12px;
+}
+.wm-app .mr-4 {
+  margin-right: 16px;
+}
+.wm-app .mr-5 {
+  margin-right: 20px;
+}
+.wm-app .mr-6 {
+  margin-right: 24px;
+}
+.wm-app .mr-7 {
+  margin-right: 28px;
+}
+.wm-app .mr-8 {
+  margin-right: 32px;
+}
+.wm-app .mr-9 {
+  margin-right: 36px;
+}
+.wm-app .mr-10 {
+  margin-right: 40px;
+}
+.wm-app .mt-0 {
+  margin-top: 0px;
+}
+.wm-app .mt-1 {
+  margin-top: 4px;
+}
+.wm-app .mt-2 {
+  margin-top: 8px;
+}
+.wm-app .mt-3 {
+  margin-top: 12px;
+}
+.wm-app .mt-4 {
+  margin-top: 16px;
+}
+.wm-app .mt-5 {
+  margin-top: 20px;
+}
+.wm-app .mt-6 {
+  margin-top: 24px;
+}
+.wm-app .mt-7 {
+  margin-top: 28px;
+}
+.wm-app .mt-8 {
+  margin-top: 32px;
+}
+.wm-app .mt-9 {
+  margin-top: 36px;
+}
+.wm-app .mt-10 {
+  margin-top: 40px;
+}
+.wm-app .mb-0 {
+  margin-bottom: 0px;
+}
+.wm-app .mb-1 {
+  margin-bottom: 4px;
+}
+.wm-app .mb-2 {
+  margin-bottom: 8px;
+}
+.wm-app .mb-3 {
+  margin-bottom: 12px;
+}
+.wm-app .mb-4 {
+  margin-bottom: 16px;
+}
+.wm-app .mb-5 {
+  margin-bottom: 20px;
+}
+.wm-app .mb-6 {
+  margin-bottom: 24px;
+}
+.wm-app .mb-7 {
+  margin-bottom: 28px;
+}
+.wm-app .mb-8 {
+  margin-bottom: 32px;
+}
+.wm-app .mb-9 {
+  margin-bottom: 36px;
+}
+.wm-app .mb-10 {
+  margin-bottom: 40px;
+}
+.wm-app .mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.wm-app .mx-1 {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.wm-app .mx-2 {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.wm-app .mx-3 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.wm-app .mx-4 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.wm-app .mx-5 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.wm-app .mx-6 {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.wm-app .mx-7 {
+  margin-left: 28px;
+  margin-right: 28px;
+}
+.wm-app .mx-8 {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.wm-app .mx-9 {
+  margin-left: 36px;
+  margin-right: 36px;
+}
+.wm-app .mx-10 {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.wm-app .my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.wm-app .my-1 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.wm-app .my-2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.wm-app .my-3 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.wm-app .my-4 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.wm-app .my-5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.wm-app .my-6 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.wm-app .my-7 {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+.wm-app .my-8 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.wm-app .my-9 {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+.wm-app .my-10 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.wm-app .ml-auto {
+  margin-left: auto;
+}
+.wm-app .mr-auto {
+  margin-right: auto;
+}
+.wm-app .mt-auto {
+  margin-top: auto;
+}
+.wm-app .mb-auto {
+  margin-bottom: auto;
+}
+.wm-app .mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.wm-app .my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.wm-app .d-flex {
+  display: flex;
+}
+.wm-app .d-inline-flex {
+  display: inline-flex;
+}
+.wm-app .flex-row {
+  flex-direction: row;
+}
+.wm-app .flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.wm-app .flex-column {
+  flex-direction: column;
+}
+.wm-app .flex-column-reverse {
+  flex-direction: column-reverse;
+}
+.wm-app .flex-wrap {
+  flex-wrap: wrap;
+}
+.wm-app .flex-nowrap {
+  flex-wrap: nowrap;
+}
+.wm-app .flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.wm-app .justify-start {
+  justify-content: flex-start;
+}
+.wm-app .justify-end {
+  justify-content: flex-end;
+}
+.wm-app .justify-center {
+  justify-content: center;
+}
+.wm-app .justify-between {
+  justify-content: space-between;
+}
+.wm-app .justify-around {
+  justify-content: space-around;
+}
+.wm-app .justify-evenly {
+  justify-content: space-evenly;
+}
+.wm-app .align-start {
+  align-items: flex-start;
+}
+.wm-app .align-end {
+  align-items: flex-end;
+}
+.wm-app .align-center {
+  align-items: center;
+}
+.wm-app .align-baseline {
+  align-items: baseline;
+}
+.wm-app .align-stretch {
+  align-items: stretch;
+}
+.wm-app .self-start {
+  align-self: flex-start;
+}
+.wm-app .self-end {
+  align-self: flex-end;
+}
+.wm-app .self-center {
+  align-self: center;
+}
+.wm-app .self-baseline {
+  align-self: baseline;
+}
+.wm-app .self-stretch {
+  align-self: stretch;
+}
+.wm-app .content-start {
+  align-content: flex-start;
+}
+.wm-app .content-end {
+  align-content: flex-end;
+}
+.wm-app .content-center {
+  align-content: center;
+}
+.wm-app .content-between {
+  align-content: space-between;
+}
+.wm-app .content-around {
+  align-content: space-around;
+}
+.wm-app .content-evenly {
+  align-content: space-evenly;
+}
+.wm-app .flex-grow-0 {
+  flex-grow: 0;
+}
+.wm-app .flex-grow-1 {
+  flex-grow: 1;
+}
+.wm-app .flex-shrink-0 {
+  flex-shrink: 0;
+}
+.wm-app .flex-shrink-1 {
+  flex-shrink: 1;
+}
+.wm-app .flex-basis-auto {
+  flex-basis: auto;
+}
+.wm-app .flex-basis-0 {
+  flex-basis: 0;
+}
+.wm-app .flex-basis-50 {
+  flex-basis: 50%;
+}
+.wm-app .flex-basis-100 {
+  flex-basis: 100%;
+}
+.wm-app .order-first {
+  order: -1;
+}
+.wm-app .order-last {
+  order: 9999;
+}
+.wm-app .order-0 {
+  order: 0;
+}
+.wm-app .order-1 {
+  order: 1;
+}
+.wm-app .order-2 {
+  order: 2;
+}
+.wm-app .order-3 {
+  order: 3;
+}
+.wm-app .order-4 {
+  order: 4;
+}
+.wm-app .order-5 {
+  order: 5;
+}
+.wm-app .gap-0 {
+  gap: 0px;
+}
+.wm-app .gap-1 {
+  gap: 4px;
+}
+.wm-app .gap-2 {
+  gap: 8px;
+}
+.wm-app .gap-3 {
+  gap: 12px;
+}
+.wm-app .gap-4 {
+  gap: 16px;
+}
+.wm-app .gap-5 {
+  gap: 20px;
+}
+.wm-app .gap-6 {
+  gap: 24px;
+}
+.wm-app .gap-7 {
+  gap: 28px;
+}
+.wm-app .gap-8 {
+  gap: 32px;
+}
+.wm-app .gap-9 {
+  gap: 36px;
+}
+.wm-app .gap-10 {
+  gap: 40px;
+}
+.wm-app .text-muted {
+  color: 12px;
 }
 .wm-app .app-top-nav {
   width: 100%;
@@ -7582,9 +8457,9 @@ button.wm-app .close {
 .wm-app .app-navbar .navbar-nav li .app-popover-wrapper a.active {
   color: #109fda;
   background-color: transparent;
-  -webkit-transition: color .3s ease;
-  -o-transition: color .3s ease;
-  transition: color .3s ease;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 .wm-app .app-navbar .navbar-nav li a.active,
 .wm-app .app-navbar .navbar-nav li .app-popover-wrapper a.active {
@@ -7631,14 +8506,13 @@ button.wm-app .close {
 .wm-app .app-left-panel,
 .wm-app .app-right-panel {
   --wm-heading-text-color: var(--wm-color-contrast-light);
-  box-shadow: var(--wm-aside-panel-shadow);
-  -webkit-box-shadow: var(--wm-aside-panel-shadow);
-  -moz-box-shadow: var(--wm-aside-panel-shadow);
   background: var(--wm-aside-panel-bg-color);
   height: auto;
   z-index: 1;
   opacity: 1;
   box-shadow: none;
+  border-right: 1px solid #E6ECE9;
+  width: 280px;
 }
 .wm-app .app-left-panel .text-muted,
 .wm-app .app-right-panel .text-muted {
@@ -7652,7 +8526,7 @@ button.wm-app .close {
 .wm-app .app-right-panel .nav .app-nav-item,
 .wm-app .app-left-panel .app-nav.nav-pills .app-nav-item,
 .wm-app .app-right-panel .app-nav.nav-pills .app-nav-item {
-  border: 1px solid var(--wm-aside-separator-color);
+  border: none;
   border-width: 1px 0;
   margin-top: -1px;
   padding: 6px 0px;
@@ -7758,6 +8632,7 @@ button.wm-app .close {
 .wm-app .app-right-panel .app-nav.nav-pills .app-nav-item.active .app-menu .dropdown-toggle:active {
   color: var(--wm-aside-panel-link-active-color);
   opacity: 1;
+  font-weight: var(--wm-font-weight-bold);
 }
 .wm-app .app-left-panel .nav li.active > a::after,
 .wm-app .app-right-panel .nav li.active > a::after,
@@ -7871,6 +8746,8 @@ button.wm-app .close {
   line-height: 1.2;
   border: none;
   border-radius: 0;
+  margin-left: 6px;
+  width: 96%;
 }
 .wm-app .app-left-panel .nav li a .app-icon,
 .wm-app .app-right-panel .nav li a .app-icon,
@@ -8235,6 +9112,9 @@ button.wm-app .close {
   opacity: 1;
   text-decoration: none;
   background-color: var(--wm-aside-panel-link-hover-bg-color);
+  font-weight: var(--wm-font-weight-bold);
+  border-radius: var(--border-radius-base);
+  width: 96%;
 }
 .wm-app .app-left-panel .nav li a:hover .app-icon,
 .wm-app .app-right-panel .nav li a:hover .app-icon,
@@ -8724,7 +9604,7 @@ button.wm-app .close {
   margin-left: 0;
   font-size: 1em;
   padding-left: 2em;
-  opacity: .6;
+  opacity: 0.6;
 }
 .wm-app .app-left-panel .nav li > .dropdown.open > .dropdown-menu li.active a,
 .wm-app .app-right-panel .nav li > .dropdown.open > .dropdown-menu li.active a,
@@ -8867,8 +9747,18 @@ button.wm-app .close {
 }
 .wm-app .app-left-panel .app-search .input-group-addon,
 .wm-app .app-right-panel .app-search .input-group-addon {
-  padding: .2em 1em;
+  padding: 0.2em 1em;
   color: #EAEAEA;
+}
+.wm-app .app-left-panel .app-nav.nav-pills li {
+  margin-left: 4px;
+}
+.wm-app .app-left-panel .app-nav.nav-pills li:hover,
+.wm-app .app-left-panel .app-nav.nav-pills li:focus,
+.wm-app .app-left-panel .app-nav.nav-pills li:active {
+  border-left: 4px solid var(--wm-color-primary);
+  padding: 0px;
+  margin: 6px 0px;
 }
 .wm-app .app-content {
   height: 100%;
@@ -8916,14 +9806,23 @@ button.wm-app .close {
   width: 100%;
   --wm-text-muted-color: var(--wm-footer-text-muted-color);
   margin-top: var(--footer-top-margin);
+  border-top: 1px solid #E6ECE9;
+}
+.wm-app .app-footer .app-nav.nav-pills {
+  display: flex;
+  justify-content: right;
 }
 .wm-app .app-footer .app-nav.nav-pills li.app-nav-item a {
   color: var(--wm-footer-text-muted-color);
   padding: 0;
+  font-weight: var(--wm-font-weight-bold);
   font-size: var(--wm-h6-font-size);
 }
 .wm-app .app-footer .app-nav.nav-pills li.app-nav-item + li.app-nav-item {
   margin-left: 1.75rem;
+}
+.wm-app .copy-rights span.anchor-caption {
+  font-weight: 500;
 }
 .wm-app label,
 .wm-app .app-label {
@@ -9086,6 +9985,7 @@ button.wm-app .close {
 .wm-app .btn.btn-rounded {
   border-radius: calc(var(--wm-rule-space) * 10);
   padding: var(--wm-btn-space);
+  margin-left: var(--wm-space-2);
 }
 .wm-app .btn-default {
   --wm-btn-text-color: color-mix(in srgb, var(--wm-btn-contrast-black), var(--wm-btn-contrast-white) 40%);
@@ -9292,6 +10192,19 @@ button.wm-app .close {
 .wm-app .btn[disabled]::before {
   display: none;
 }
+.wm-app .btn-default.contactUs-btn {
+  border-radius: 44px;
+  border: 1px solid #B072EA;
+  color: #B072EA;
+  padding: 12px 32px;
+}
+.wm-app .btn-default.contactUs-btn:hover {
+  border: 1px solid #B072EA;
+  color: #B072EA;
+}
+.wm-app .contactUs-btn .app-icon.wi.wi-phone {
+  color: #B072EA;
+}
 .wm-app a {
   color: var(--wm-link-color);
 }
@@ -9496,6 +10409,73 @@ button.wm-app .close {
 .wm-app *:not([hidden]):not(.ng-hide).app-label:not(.text-ellipsis):not(.p):not(.h1):not(.h2):not(.h3):not(.h4):not(.h5):not(.h6) + .wm-focus-rect + .app-label:not(.text-ellipsis):not(.p):not(.h1):not(.h2):not(.h3):not(.h4):not(.h5):not(.h6) {
   margin-left: var(--label-2-label-spacing);
 }
+.wm-app .btn-medium {
+  background-color: #efe3fb;
+  color: #000000;
+  border-color: #efe3fb;
+  font-size: 11px;
+  font-weight: 600;
+  width: 66px;
+  height: 24px;
+}
+.wm-app .section-space {
+  padding: 4rem 0rem;
+}
+.wm-app .btn-border {
+  border-color: #EF8757;
+  color: #EF8757;
+  width: 174px;
+  height: 48px;
+  top: 2rem;
+  background-color: transparent;
+}
+.wm-app .btn-border:hover {
+  border-color: #EF8757;
+  color: #EF8757;
+  background-color: transparent;
+}
+.wm-app .btn-border i.app-icon {
+  color: #EF8757;
+}
+.wm-app .line-height {
+  line-height: 32px;
+}
+.wm-app .equal-spacing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+}
+.wm-app .bg-linear-gradient {
+  background: linear-gradient(to bottom, #d3c5eb, #ffffff);
+}
+.wm-app .row-border {
+  border: 1px solid #CFDBD599;
+  padding: 32px;
+  border-radius: 12px;
+  background-color: var(--default-bg);
+}
+.wm-app .column-style {
+  width: 70%;
+}
+.wm-app .column-style .p {
+  font-size: 12px;
+}
+.wm-app .column-style .h4 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.wm-app .column-style a {
+  color: #6F727B;
+  font-weight: 600;
+  font-size: 12px;
+  height: 10vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  text-decoration: none;
+}
 .wm-app .h1,
 .wm-app h1 {
   font-size: var(--wm-h1-font-size);
@@ -9690,7 +10670,7 @@ button.wm-app .close {
   padding: var(--wm-space-7);
 }
 .wm-app .space-8 {
-  padding: var(--wm-space-8);
+  padding: var(--wm-space-8) !important;
 }
 .wm-app .space-9 {
   padding: var(--wm-space-9);
@@ -9704,6 +10684,10 @@ button.wm-app .close {
 .wm-app .space-12 {
   padding: var(--wm-space-12);
 }
+.wm-app .space-top-bottom-4 {
+  padding-top: var(--wm-space-4);
+  padding-bottom: var(--wm-space-4);
+}
 .wm-app .btn-shadow {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
@@ -9711,6 +10695,12 @@ button.wm-app .close {
 }
 .wm-app .img-rounded {
   border-radius: 4px;
+}
+.wm-app .images-width-100 img.app-picture {
+  width: 100% !important;
+}
+.wm-app .image-width-10 img.app-picture {
+  width: 10% !important;
 }
 .wm-app .h1,
 .wm-app .h2,
@@ -10081,7 +11071,7 @@ button.wm-app .close {
 }
 .wm-app .btn-flat.btn-primary:hover,
 .wm-app .btn-flat.btn-primary:focus {
-  background-color: #9a5aff;
+  background-color: #B072EA;
   color: #fff;
 }
 .wm-app .btn-flat.btn-info {
@@ -11261,6 +12251,12 @@ button.wm-app .close {
 .wm-app .carousel-control.left,
 .wm-app .carousel-control.right {
   background-image: none;
+  width: 4%;
+  bottom: 80px;
+  color: #ffffff;
+}
+.wm-app .carousel-indicators .active {
+  background-color: #B072EA;
 }
 .wm-app .app-accordion .app-accordion-panel.panel + .panel {
   margin-top: 1em;
@@ -11678,6 +12674,7 @@ button.wm-app .close {
 .wm-app .app-livelist.list-card > .panel-footer {
   background: none;
   padding: var(--space-3) 0;
+  margin-top: var(--wm-space-8);
 }
 .wm-app .app-list.list-card .list-group,
 .wm-app .app-livelist.list-card .list-group {
@@ -14228,6 +15225,43 @@ button.wm-app .close {
   .wm-app .app-content .app-content-row .app-content-column {
     padding: 2em;
   }
+}
+@media (max-width: 1336px) {
+  .wm-app .app-carousel carousel {
+    height: 320px !important;
+  }
+}
+@media (max-width: 1200px) {
+  .wm-app .app-carousel carousel {
+    height: 280px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .wm-app .app-carousel carousel {
+    height: 236px !important;
+  }
+}
+@media (max-width: 768px) {
+  .wm-app .app-carousel carousel {
+    height: 170px !important;
+  }
+  .wm-app .app-carousel .carousel.slide .carousel-control .icon-next,
+  .wm-app .wm-app .app-carousel .carousel.slide .carousel-control .icon-prev {
+    font-size: 45px;
+  }
+}
+@media (max-width: 425px) {
+  .wm-app .wm-app .app-carousel carousel {
+    height: 128px !important;
+  }
+}
+.wm-app .carousel-indicators li.active {
+  background-color: #b072ea;
+}
+.wm-app .carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
 }
 .wm-app .app-livelist.artifact-types,
 .wm-app .app-list.artifact-types {
