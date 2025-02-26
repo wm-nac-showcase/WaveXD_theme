@@ -8055,6 +8055,7 @@ a {
  .active-none {
   border-bottom: none !important;
   padding-bottom: 30px !important;
+  position: relative;
 }
 
 .active-none::after {
@@ -8063,11 +8064,29 @@ a {
   width: 87%;
   display: block;
   left: 20px;
-  position: relative;
-  top: 12px;
+  position: absolute;
+  bottom: 12px;
   border-radius: 0 !important
+}
+
+.active-none .dropdown-menu a {
+  padding-left: 16px !important;
+}
+
+.active-none .dropdown-menu a i {
+  display: none !important;
 }
 
 .active-none:hover {
   margin-bottom: 0 !important;
+}
+
+.app-left-panel .app-nav.nav-pills .app-nav-item > .dropdown.open > .dropdown-menu li a{
+  opacity: 1 !important;
+}
+
+
+.wm-sl-l.sl-search:before {
+  content: "\e907" !important;
+  font-family: 'NAC' !important; 
 }
