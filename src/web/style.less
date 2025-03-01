@@ -9153,15 +9153,15 @@ img.app-picture.wavepay-logo-transparent {
   height: 305px;
 }
 
-.card-block:hover,
-.card-block:active {
+.wm-app .card-block:hover,
+.wm-app .card-block:active {
   background-color: #efe3fb;
 }
 
-.card-block:hover a,
-.card-block:hover a:hover,
-.card-block:active a,
-.card-block:active a:active {
+.wm-app .card-block:hover a,
+.wm-app .card-block:hover a:hover,
+.wm-app .card-block:active a,
+.wm-app .card-block:active a:active {
   color: rgba(176, 114, 234, 1);
   font-weight: 500;
   text-decoration: none;
@@ -10352,3 +10352,75 @@ img.app-picture.wavepay-logo-transparent {
   height: auto !important;
   padding: 1em;
 }
+
+
+.carousel-content-container .h2.text-white{
+  font-size: 48px;
+  font-weight: 900;
+}
+.carousel-content-container {
+  top: ~"calc(25% - 2rem)" !important;
+}
+.carousel-control-prev, .carousel-control.left{
+  background-color: rgba(255, 255, 255, 0.2);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  color: #ffffffe0 !important;
+  height: 75px;
+  margin: auto;
+  top: 5rem;
+  width: 32px !important;
+}
+.carousel-control-next, .carousel-control.right{
+background-color: rgba(255, 255, 255, 0.2);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  color: #ffffffe0 !important;
+  height: 75px;
+  margin: auto;
+  top: 5rem;
+  width: 32px !important;
+}
+
+.carousel-control .icon-prev:before {
+  content: '\e904' !important;
+  font-family: 'NAC';
+}
+.carousel-control .icon-next:before {
+  content: '\e904' !important;
+  font-family: 'NAC';
+}
+.app-carousel .carousel.slide .carousel-control .icon-prev, .app-carousel .carousel.slide .carousel-control .icon-next {
+  font-size: 20px;
+
+  }
+.app-carousel .carousel.slide .carousel-control .icon-prev{
+   top: 2.25rem;
+  left: 0.65rem;
+  }
+
+  .app-carousel .carousel.slide .carousel-control .icon-next{
+transform: rotate(180deg);
+  right: 0.5rem;
+  top: 1.75rem;
+}
+.carousel-control{
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+.carousel-indicators li{
+  border: none !important;
+  background: rgba(176, 114, 234, 0.4) !important;
+  width: 4px !important;
+  height: 4px !important;
+}
+.carousel-indicators li.active {
+  background-color: #b072ea !important;
+  width: 7px !important;
+  height: 7px !important;
+  border: none !important;
+  }
+  .carousel-indicators{
+      align-items: center ;
+  }
