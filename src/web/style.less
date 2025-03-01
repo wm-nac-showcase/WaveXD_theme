@@ -9116,13 +9116,6 @@ img.app-picture.wavepay-logo-transparent {
   font-size: 14px;
 }
 
-.blog-heading:hover,
-.blog-heading:active,
-.blog-desc:hover,
-.blog-desc:active {
-  text-decoration: underline;
-  cursor: pointer;
-}
 .p-0 {
   padding: 0 !important;
 }
@@ -10395,14 +10388,15 @@ background-color: rgba(255, 255, 255, 0.2);
 
   }
 .app-carousel .carousel.slide .carousel-control .icon-prev{
-   top: 2.25rem;
-  left: 0.65rem;
+  transform: rotate(180deg);
+  left: 0.5rem;
+  top: 1.75rem;
   }
 
   .app-carousel .carousel.slide .carousel-control .icon-next{
-transform: rotate(180deg);
-  right: 0.5rem;
-  top: 1.75rem;
+    right: 0.5rem;
+    top: 2.5rem;
+
 }
 .carousel-control{
   opacity: 1 !important;
@@ -10424,3 +10418,74 @@ transform: rotate(180deg);
   .carousel-indicators{
       align-items: center ;
   }
+  .flex-center{
+    display: flex;
+    align-items: center;
+}
+.blog-post {
+    background: linear-gradient(181.75deg, rgba(0, 0, 0, 0) 50.55%, rgb(0 0 0 / 91%) 143.21%) !important;
+    }
+.pb-0{
+    padding-bottom: 0 !important;
+}
+.pt-0{
+    padding-top: 0 !important;
+}
+.btn-common.font-13 .btn-caption{
+    font-size: 13px !important;
+}
+.bottom-align{
+    position: absolute !important;
+    bottom: 20px;
+    left: 0;
+}
+.app3-container {
+    background: linear-gradient(180.45deg, rgba(0, 0, 0, 0) 50.15%, rgba(0, 0, 0, 1) 102.23%), #E2E6EB !important;
+    }
+    img.app-picture.app1-pic {
+    height: 540px !important;
+    }
+.h2.bold.pb-6{
+    padding-bottom: 6px !important;
+}
+.m-0{
+    margin:  0 !important;
+}
+.home-bg-btn i::before{
+    color: white !important;
+}
+.center-container{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 120px;
+}
+.carousel-content-container {
+    top: 4rem !important;
+}
+.d-block{
+    display: block !important;
+}
+.word-break{
+    white-space: normal;
+    font-size: 48px;
+    font-weight: 900 !important;
+}
+.btn.btn-black:hover{
+background: rgba(27, 26, 29, 1);
+  color: white;
+  border-radius: 8px !important;
+}
+.btn.btn-white:hover{
+background: white;
+  color: rgba(27, 26, 29, 1);
+  border-radius: 8px !important;
+}
+.d-flex{
+    display: flex;
+}
+@media (max-width: 992px){
+    .d-flex.list-group{
+        display: inline-block !important;
+    }
+}
