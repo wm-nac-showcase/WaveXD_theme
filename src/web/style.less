@@ -10423,7 +10423,7 @@ background-color: rgba(255, 255, 255, 0.2);
     align-items: center;
 }
 .blog-post {
-    background: linear-gradient(181.75deg, rgba(0, 0, 0, 0) 50.55%, rgb(0 0 0 / 91%) 143.21%) !important;
+    background: linear-gradient(181.75deg, rgba(0, 0, 0, 0) 50.55%, rgba(0, 0, 0, 0.9) 143.21%) !important;
     }
 .pb-0{
     padding-bottom: 0 !important;
@@ -10488,4 +10488,159 @@ background: white;
     .d-flex.list-group{
         display: inline-block !important;
     }
+}
+
+.app-content.login-page-content .app-content-row .app-content-column {
+  background: transparent;
+}
+
+.login-page-content {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.login-btn.form-control {
+  height: 54px;
+  border-radius: 8px !important;
+  border: 2px solid #EFF1F0;
+
+}
+
+.font-12.continue-label {
+  font-size: 12px;
+  color: #1B1A1D;
+}
+
+.acc-link {
+  color: rgba(75, 133, 155, 1);
+  text-decoration: underline;
+}
+
+.continue-label:before,
+.continue-label:after {
+  background-color: rgba(203, 202, 215, 0.2);
+  height: 2px;
+  width: 34%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 9px;
+
+}
+
+.continue-label:before {
+  left: 0;
+}
+
+.continue-label:after {
+  right: 0;
+}
+
+.form-label {
+  color: #1B1A1D;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  margin-bottom: -7px !important;
+  margin-left: 10px !important;
+  z-index: 99;
+}
+
+.login-new {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  justify-content: center;
+}
+
+.login-new-label {
+  display: contents;
+  color: rgba(27, 26, 29, 1);
+}
+
+.login-container>.app-grid-column {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.login-tile {
+  width: 37%;
+  /* height: 680px; */
+  border-radius: 16px;
+  border-bottom-width: 3px;
+  padding: 30px 10px;
+  margin-right: 6%;
+
+}
+
+.h2.login-title {
+  letter-spacing: -1px;
+}
+
+.app-login .app-form.app-login-form {
+  padding-top: 14px;
+  padding-bottom: 0;
+  border-radius: 16px;
+}
+
+.app-login .app-form .input-group .form-control {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.input-group {
+  display: grid;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input::placeholder {
+  font-size: 14px;
+}
+
+.app-form.app-login-form .input-group .app-label {
+  width: max-content;
+  background: white;
+  padding: 0 4px;
+  margin-left: 14px !important;
+
+}
+
+.app-login .app-form.app-login-form .app-login-button {
+  margin-top: 18px;
+  border-radius: 8px !important;
+  min-height: 54px;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.app-login-button.login-with-google {
+  margin-top: 27px !important;
+  border: 2px solid rgba(239, 241, 240, 1);
+  color: rgba(27, 26, 29, 1);
+  font-size: 14px !important;
+}
+
+.app-login-button.login-with-google .button-image-icon {
+  padding-left: 12px;
+}
+
+@media (max-width: 992px) {
+  .login-container>.app-grid-column {
+
+      justify-content: center;
+  }
+
+  .login-tile {
+      width: 100%;
+      margin: 10px;
+  }
 }
