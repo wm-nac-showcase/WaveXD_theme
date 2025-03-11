@@ -10591,18 +10591,18 @@ background: white;
   padding-right: 16px !important;
 }
 
-.input-group {
+.wm-app .input-group {
   display: grid;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
+.wm-app input:-webkit-autofill,
+.wm-app input:-webkit-autofill:hover,
+.wm-app input:-webkit-autofill:focus,
+.wm-app input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
-input::placeholder {
+.wm-app input::placeholder {
   font-size: 14px;
 }
 
@@ -10740,3 +10740,125 @@ background: rgba(43, 43, 43, 1) !important;
   .use-case-list-item.list-group-item:nth-child(even) {
   background-color: #efefef !important;
 }
+
+.carousel-content-container{
+  left: 55px !important;
+}
+.carousel-content-container .btn.btn-common{
+  left: 10px;
+}
+
+.app-footer {
+  padding-bottom: 0px !important;
+  padding-top: 18px !important;
+}
+.app-footer .flex-vert-center > .col-sm-12{
+  padding-bottom: 3px !important;
+}
+
+.app-page[pagetitle="Artifact Details"] footer.app-footer {
+  margin-bottom: 32px;
+  }
+
+.wm-app::-webkit-scrollbar-track, .wm-app ::-webkit-scrollbar-track {
+  background: var(--scroll-bar-width);
+  border-radius: var(--scroll-bar-width);
+}
+
+.wm-app::-webkit-scrollbar-thumb, .wm-app ::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: var(--scroll-bar-width);
+}
+
+.wm-app .app-content-row .app-left-panel .app-partial[type="leftnav"]:hover ::-webkit-scrollbar-thumb, .wm-app .app-content .app-content-row .app-content-column.app-page-content:hover ::--webkit-scrollbar-thumb {
+  background: var(--scroll-bar-thumb);
+  border-radius: var(--scroll-bar-width);
+}
+
+.carousel-control.left, .wm-app .carousel-control.right{
+  visibility: hidden;
+}
+
+.wm-app .app-dialog.preview-dialog .app-dialog-header,
+.wm-app .app-dialog.preview-dialog .app-dialog-body{
+  background-color: #ffffff !important;
+}
+
+.wm-app video{
+  background-color: #fff !important;
+}
+
+.btn-default.contactUs-btn:hover {
+  border: 1px solid #B072EA;
+  background-color: #B072EA;
+  color: white !important;
+}
+.btn.btn-common:hover, .wm-app .btn.btn-common:hover, .btn-common-bottom:hover{
+  background-color: #E97100 !important;
+  border-color: #E97100 !important;
+}
+.btn.btn-common, .btn-common-bottom{
+  background-color: #FF7B00 !important;
+  border-color: #FF7B00 !important;
+  font-weight: 600;
+}
+
+.btn-common-bottom{
+font-size: 14px;
+font-weight: 700 !important;
+color: white !important;
+padding: 11px 32px;
+width: 188px;
+min-height: 48px !important;
+}
+.contact-btn-bottom{
+width: 188px;
+color: #B072EA !important;
+border: 1px solid #B072EA !important;
+background-color: transparent !important;    
+font-size: 14px;
+font-weight: 700 !important;
+min-height: 48px !important;
+}
+
+.contact-btn-bottom:hover{
+  background-color: #B072EA !important;
+  color: white !important;
+
+}
+.lh-70{
+  line-height: 70px;
+}
+.btn-medium.font-12{
+  font-size: 12px !important;
+  min-height: 37px !important;
+  cursor: default !important;
+}
+button.btn.app-button.btn-default.btn-border:hover {
+  background-color: #FF7B00 !important;
+  border-color: #FF7B00 !important;
+  color: white !important;
+  
+}
+.btn-border:hover i.app-icon {
+  color: white !important;
+  }
+
+button.btn.app-button.btn-default.btn-border, .btn-border i.app-icon {
+  color: #FF7B00 !important;
+  border-color: #FF7B00 !important;
+  font-size: 16px;
+  font-weight: 600;
+  
+}
+.app-scroll-list .app-datanavigator .pager li a{
+  color: #B072EA;
+      font-size: 28px;
+      box-shadow: none;
+      border-color: #B072EA;
+      background-color: #fff;
+}
+.app-scroll-list .app-datanavigator .pager li a:hover{
+  background-color: #B072EA;
+  color: white;
+  }
