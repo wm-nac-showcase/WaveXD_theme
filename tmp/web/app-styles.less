@@ -1,0 +1,144 @@
+//Landing Page styles
+.app-page {
+    .app-header, .app-mobile-header {
+        
+    }
+    .app-content{
+        &.landing{
+            .app-content-row{
+                .app-content-column{
+                    // --wm-body-bg-color: var(--wm-header-bg-color);
+                    // --wm-text-color: var(--wm-header-text-color);
+                    // --wm-heading-text-color: var(--wm-header-text-color);
+                }
+            }
+            + .app-footer{
+                // --wm-footer-bg: var(--wm-color-contrast-dark);
+                // --wm-footer-text-color: var(--wm-color-contrast-light);
+                // --wm-footer-spacing:1.5rem 3.75rem;
+                // --footer-top-margin:0;
+                // .app-nav.nav-pills li.app-nav-item a {
+                //     color: var(--wm-header-text-color);
+                //   }
+            }
+        }
+    }
+}
+
+.app-livelist, .app-list{
+    &.artifact-types {
+        background: none;
+        box-shadow: none;
+        .list-group {
+            display: flex;
+            flex-wrap: wrap;
+            overflow: visible;
+            // columns: 3 360px;
+            // height: 600px;
+            // padding: 0;
+            // column-gap: 28px;
+            // overflow: visible;
+            .app-list-item {
+                padding: 32px;
+                margin: 4px;
+                background: var(--wm-color-contrast-light);
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+                border: 1px solid rgba(218, 220, 228, 0.5);
+                border-radius: 12px;
+                width: ~"calc(33.33% - 8px)";
+                overflow: hidden;
+                &:hover, &:focus {
+                    // transform: scale(1.05);
+                    background: var(--wm-color-contrast-light);
+                }
+                img{
+                    width: ~"calc(100% + 32px + 32px)";
+                    height: 240px;
+                    margin: -32px -32px 32px;
+                    object-position: center;
+                }
+                &.active{
+                    // transform: scale(1.05);
+                    .app-label{
+                        color: var(--wm-text-color);
+                        opacity: 1;
+                    }
+                }
+                .artifact-title {
+                    font-size: 22px;
+                    font-weight: 500;
+                    display: block;
+                }
+                .artifact-desc {
+                    font-size: 15px;
+                    display: block;
+                    line-height: 24px;
+                    margin: 12px 0;
+                }
+                a{
+                    font-size: 13px;
+                    font-weight: 500;
+                    text-decoration: underline;
+                }
+                &.Prefabs{
+                    img{
+                        // object-position: bottom;
+                    }
+                }
+                &.Themes{
+
+                }
+                &.WebComponents{
+                    img{
+                        object-position: top;
+                    }
+                }
+                &.Apps{
+                    width: ~"calc(66.666% - 8px)";
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    justify-content: space-between;
+                    img{
+                        height: 420px;
+                        margin: -32px -40px -32px 0;
+                        object-fit: contain !important;
+                        width: auto;
+                    }
+                }
+                &.APIs{
+
+                }
+            }
+        }
+    }
+    &.not-list{
+        .list-group {
+            padding: 0;
+            margin: 0 -3px;
+            li.app-list-item {
+                padding: 0;
+                margin: 3px;
+                border: none;
+            }
+        }
+    }
+    &.screenshots{
+        .list-group {
+            .app-list-item {
+                margin: 0;
+                border: none;
+                .app-picture {
+                    height: 247px;
+                    width: 422px;
+                    max-width: 100%;
+                    object-fit: fill !important;
+                    border: 1px solid rgba(207, 219, 213, 0.6);
+                    border-radius: 12px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
