@@ -13111,13 +13111,13 @@ app-page-appsdetails .new-window-anchor .anchor-caption {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .header-height {
       height: 71px;
   }
 }
 
-@media only screen and (max-device-width: 768.98px) {
+@media only screen and (max-device-width: 768px) {
   .wm-app app-page-searchpage .app-header .app-search {
       display: block !important;
       top: 12px !important;
@@ -13157,20 +13157,20 @@ app-page-appsdetails .new-window-anchor .anchor-caption {
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .search-close-btn {
       top: -52px;
       right: 10px;
   }
 }
 
-@media only screen and (min-width:767px) and (max-width:992px) {
+@media (min-width:767px) and (max-width:992px) {
   app-page-searchpage .header-height {
       display: none;
   }
 }
 
-@media only screen and (min-width: 768.98px) and (max-device-width: 992px) {
+@media only screen and (min-width: 768px) and (max-device-width: 992px) {
   .wm-app app-page-searchpage .app-header .app-search {
       display: block !important;
       top: 12px !important;
@@ -13218,7 +13218,7 @@ app-page-appsdetails .new-window-anchor .anchor-caption {
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media (max-width: 992px) {
   .search-icon-btn-wrap {
       position: absolute !important;
       z-index: 1;
@@ -13229,4 +13229,44 @@ app-page-appsdetails .new-window-anchor .anchor-caption {
   .search-icon-btn {
       border: none;
   }
+}
+
+@media (max-width: 1099px) {
+  .search-page-container {
+      padding: 16px 20px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-result-wrapper {
+      flex-direction: column;
+  }
+}
+
+.search-list {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.search-text {
+  font-weight: bold !important;
+}
+
+.search-btns,
+.search-btns:hover {
+  border: 1px solid #6F727B33 !important;
+  color: #6F727B !important;
+  font-weight: 500 !important;
+  border-radius: 12px !important;
+  min-height: 44px !important;
+}
+
+.search-list-item {
+  border: none !important;
+  margin-right: 8px !important;
+}
+
+.search-list-item.active .search-btns {
+  background-color: #B072EA !important;
+  color: white !important;
 }
