@@ -13066,3 +13066,124 @@ app-page-appsdetails .new-window-anchor .anchor-caption {
 .search-page-container {
     padding: 16px 160px 24px;
 }
+
+
+@media only screen and (min-width: 768px) {
+  .header-height {
+      height: 71px;
+  }
+}
+
+@media only screen and (max-device-width: 768.98px) {
+  .wm-app app-page-searchpage .app-header .app-search {
+      display: block !important;
+      top: 12px !important;
+      width: 91% !important;
+      margin: auto;
+      border-radius: 12px !important;
+      background-color: #ECECEC !important;
+      border-bottom: none;
+      height: 48px;
+  }
+
+  .search-close-btn {
+      position: absolute;
+      bottom: -53px;
+      z-index: 3001;
+      right: 20px !important;
+      top: -8px;
+      background: transparent !important;
+      border: none !important;
+  }
+
+  .search-close-btn .app-icon {
+      font-size: 12px !important;
+  }
+
+  app-page-searchpage .app-header .app-search input.app-textbox.form-control.app-search-input {
+      top: -6px;
+
+  }
+
+  app-page-searchpage .search-result-wrapper {
+      align-items: flex-start !important;
+  }
+
+  app-page-searchpage .app-header {
+      border-bottom: none !important;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .search-close-btn {
+      top: -52px;
+      right: 10px;
+  }
+}
+
+@media only screen and (min-width:767px) and (max-width:992px) {
+  app-page-searchpage .header-height {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 768.98px) and (max-device-width: 992px) {
+  .wm-app app-page-searchpage .app-header .app-search {
+      display: block !important;
+      top: 12px !important;
+      width: 97% !important;
+      margin: auto;
+      border-radius: 12px !important;
+      background-color: #ECECEC !important;
+      border-bottom: none;
+      height: 48px;
+  }
+
+  .search-close-btn {
+      position: absolute;
+      bottom: 0px;
+      z-index: 3001;
+      right: 20px !important;
+      top: 17px;
+      background: transparent !important;
+      border: none !important;
+  }
+
+  .search-close-btn .app-icon {
+      font-size: 12px !important;
+  }
+
+  app-page-searchpage .app-header .app-search input.app-textbox.form-control.app-search-input {
+      top: 1px;
+
+  }
+
+  app-page-searchpage .search-result-wrapper {
+      align-items: flex-start !important;
+  }
+
+  app-page-searchpage .app-header {
+      border-bottom: none !important;
+  }
+
+  .app-grid-column.flex-end.header-right-section.col-sm-6 {
+      width: 100%;
+  }
+
+  .search-icon-btn-wrap {
+      right: -42px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .search-icon-btn-wrap {
+      position: absolute !important;
+      z-index: 1;
+      right: 33px;
+      top: 3px
+  }
+
+  .search-icon-btn {
+      border: none;
+  }
+}
